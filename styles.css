@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #855cd6; /* Light gray background */
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.logo1 {
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.logo2 {
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidenav {
+    position: fixed; /* Always fixed at the top */
+    top: 110px; /* Position from the top */
+    left: 0; /* Ensure it's at the left side */
+  
+    width: 240px; /* Fixed width */
+    background-color: #FF8C1A; /* Primary orange */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+
+.sidenav button {
+    background-color: white; /* Bright blue */
+    color: black;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.sidenav button:hover {
+    background-color: #5c39a0; /* Darker blue on hover */
+    color: white;
+}
+
+.active-button {
+    background-color: #855cd6 !important; /* Lighter orange for active button */
+    color: white !important; /* Keep text color white */
+}
+.project-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 8px 10px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1em; /* Larger font */
+    margin: 5px; /* Spacing between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+.solution{
+    background-color: transparent;
+    text-decoration: underline;
+    color: #007BFF;
+}
+
+.project-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.solution:hover{
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0565cb;
+}
+/* .content {
+    width: 100%;
+    flex-grow: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-size: 1.5rem;
+
+  
+} */
+
+.content {
+    width: 100%;
+    margin-left: 270px; /* Adjust margin to the width of sidenav plus some space */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-size: 1.5rem;
+
+    h2{
+        text-align: center;
+    color: #855cd6 !important; 
+    }
+}
+
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+
+.toggle-sidenav {
+    background-color: white; /* Bright blue */
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-left: auto; /* Push to the right */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none; /* Hide by default */
+}
+
+.sidenav.hidden {
+    display: none; /* Hide sidenav when this class is added */
+}
+
+@media (max-width: 768px) {
+    .toggle-sidenav {
+        display: block; /* Show toggle button on mobile */
+    }
+
+    .sidenav {
+        display: none; /* Hide sidenav by default on mobile */
+        right: 0 !important;
+        left: auto;
+    }
+
+    .sidenav.active {
+        display: block; /* Show sidenav when active */
+       
+    }
+
+    .content {
+        margin-left: 0; /* No margin when sidenav is hidden */
+    }
+}
+
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    flex-basis: 80px;
+    margin-right: 10px;
+}
+.form-group input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+}
+.copy-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copy-btn:hover {
+    background-color: #45a049;
+}

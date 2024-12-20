@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('sprite')">
+          SEQUENTIAL LOGIC
+        </button>
+        <button onclick="showContent('changing-costume')">
+          ORDER OF COMMANDS
+        </button>
+        <button onclick="showContent('repeat')">
+          WORKING WITH MULTIPLE SPRITES
+        </button>
+    </div>
+    
+
+      <!-- Right Side Content -->
+      <div class="content">
+     <!-- SPRITE -->
+<div id="sprite" class="content-section" style="display: none;">
+  <h2>SEQUENTIAL LOGIC</h2>
+  <div>
+      <p>
+          Think of making a sandwich. What steps would you take?
+      </p>
+      <div style="display: flex;">
+        <div style="width: 40%;">
+          <ul>
+            <li>Get up from your bed.</li>
+            <li>Brush your teeth.</li>
+            <li>Take a bath.</li>
+            <li>Wear your uniform.</li>
+            <li>Put your socks.</li>
+            <li>Put your shoes</li>
+            <li>Go to school</li>
+          </ul>
+        </div>
+        <div style="width: 60%;">
+          <img src="./assets/images/16.png" alt="" width="60%">
+        </div>
+      </div>
+      
+      
+      <br>
+      <p>
+        Imagine you put on your shoes before wearing socks!
+<br><br>In our daily lives, sometimes the order in which we do things is important
+<br><br>Just like that in programming, sequential logic is about giving instructions in the right order.
+<br><br>Let’s see in Scratch how the sequence of commands impacts the output!
+
+      </p>
+
+  </div>
+</div>
+
+<!-- CHANGING COSTUME OF THE SPRITE -->
+<div id="changing-costume" class="content-section" style="display: none;">
+    <h2 style="color: #1230ae; font-weight: bold;">ORDER OF COMMANDS</h2>
+    <div>
+      <p>
+        <br><br>I will move the sprite to a new location and show a message.
+        <br><br> We will use a new block to display the message. This block displays a message on the screen for a certain duration.
+        <br><br>You can specify the duration in the number of seconds in the command.
+         
+      </p>
+      <div style="display: flex;">
+        <div style="text-align: center;">
+            <img src="./assets/images/11.png" alt="" width="80%">
+        </div>
+        <div>
+           <p>A speech bubble appears over the sprite and stays for a specified time.</p>
+        </div>
+      </div>
+      <p style="font-size: 1.4rem;">
+        <img src="./assets/images/17.png" alt="" width="40%"><br>
+        What is happening here?
+  <br><br>The message is displayed first and then the sprite is moved. Let’s correct the order!
+  <br><img src="./assets/images/18.png" alt="" width="40%"><br>
+  <br>Do you see why the order is important?
+  <br><br>Now, let’s do something fun!
+  
+      </p>
+    </div>
+</div>
+
+<!-- REPEAT -->
+<div id="repeat" class="content-section" style="display: none;">
+  <h2 style="color: #1230ae; font-weight: bold;">WORKING WITH MULTIPLE SPRITES</h2>
+  
+ <p style="font-size: 1.6rem;">
+  <b>GOAL:</b> Let's make these two sprites fly across the stage! As they move, they'll say something cool and grow in size. The left hippo will glide to the right side, and the right hippo to the left.
+ </p>
+ <h2>THINKING ABOUT THE ACTIONS TO BE PERFORMED:</h2>
+ <p style="font-size: 1.6rem;">
+  But before we do that, let’s think of the steps we must follow to make this work.
+  <br><br>Until now we have worked with only one sprite but do you know we can use multiple sprite?
+  <br><br>Each sprite is like an actor in a play. Even though they share the stage, they can have different lines and actions!
+  <br><br>Just like in a play each actor has their costumes and dialogues.
+  <br><br>We can decide how we want each sprite to behave. You can think of yourself as a director of a play!
+  <br><br><b>Click on Hippo1 to add actions for Hippo1.</b><br>
+  <img src="./assets/images/1.png" alt="" width="70%"><br><br>
+  <b>Click on Hippo2 to add actions for Hippo2.</b><br>
+  <img src="./assets/images/2.png" alt="" width="70%"><br><br>
+  We want as soon as we click on the green flag the sprite should follow these actions in the following order:
+  
+ </p>
+ <ul style="font-size: 1.6rem;">
+  <li>We want our sprite to start from one point</li>
+  <li>Glide across the stage to a new position </li>
+  <li>Say something cool. </li>
+  <li>Let’s make it even more interesting by increasing the size as it reaches another end.</li>
+ </ul>
+ <p style="font-size: 1.6rem;">
+  Now that we know what steps to follow, let’s think of the blocks we need.
+
+  
+ </p>
+ <h2>Let’s start with Hippo1.</h2>
+ <p style="font-size: 1.6rem;">
+ <b> Step 1:</b> First, let's pick when the green flag is clicked so that the commands get executed when you click on the green flag.
+ <br>
+ <img src="./assets/images/3.png" alt="" width="25%"><br><br>
+<b> Step 2:</b> I want every time I click on the green flag it should first come to its original position before gliding to the other end. Which command will help me do that?
+<br><br> That’s correct we need to use <b>go to</b> command for that.
+<br>
+ <img src="./assets/images/4.png" alt="" width="50%"><br><br>
+<b>Step 3:</b> Next, we want the sprite to smoothly move to a specific point. Which command would help us to do that?
+<br><br>For that, we will use the <b>glide</b> command from <b>Motion</b>.<br>
+<div style="display: flex;">
+  <div style="text-align: center;width: 50%;">
+    <img src="./assets/images/9.png" alt="" width="90%">
+  </div>
+  <div style="width: 50%;">
+    <p>Glides the sprite to the location in a specified amount of time. If the number of seconds is less it will reach faster and if it is more it will reach slowly.</p>
+  </div>
+</div>
+<br>
+<b>Step 4:</b> Now we want it should show a message for a certain number of seconds, which command do you think will help us do that?
+<br><br>We will use <b>say in secs</b> block for that.<br>
+<img src="./assets/images/5.png" alt="" width="50%"><br>
+
+<b>Step 5:</b> Finally, we want to increase the size to make it grow after the glide, which command will do that for us?
+We will use the <b>change size by</b> command from <b>Looks</b>.
+<div style="display: flex;">
+  <div style="text-align: center;width: 50%;">
+    <img src="./assets/images/7.png" alt="" width="70%">
+  </div>
+  <div style="width: 40%;">
+    <p>Changes the sprite's size by the specified amount. If you want to increase the size you can mention a positive number and to reduce the size you can mention a negative number.</p>
+  </div>
+</div>
+<br><img src="./assets/images/6.png" alt="" width="50%"><br><br>
+<b>Let’s see the output!</b><br><br>
+<b>Step 6:</b> Here you can see how the sprite is not in its original size when we execute the code again and every time we execute the code it keeps getting bigger.
+<br><br>Which command would help you to reset the size of the sprite?<br><br>
+We can use the <b>set size</b> to command from <b>Looks</b>.
+<div style="display: flex;">
+  <div style="text-align: center;width: 50%;">
+    <img src="./assets/images/8.png" alt="" width="60%">
+  </div>
+  <div style="width: 50%;">
+    <p>Sets the sprite's size to the specified amount. To make a sprite of its original size you can specify 100.</p>
+  </div>
+</div>
+<br>
+<b>Step 7:</b> Let’s do the same for another hippo.
+<br><img src="./assets/images/10.png" alt="" width="50%"><br><br>
+<b>Now that you have learned about new commands, it is time for you to do some fun activities.</b>
+ </p>
+</div>
+
+
+        
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
